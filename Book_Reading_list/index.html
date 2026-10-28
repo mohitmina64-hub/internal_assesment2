@@ -1,29 +1,518 @@
+
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Book Reading List</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <meta
+    name="description"
+    content="Mohit Meena's portfolio — Computer Science Engineering student at JECRC University, Jaipur, specializing in Artificial Intelligence and Data Science."
+  />
+
+  <meta name="theme-color" content="#0f172a" />
+
+  <title> Portfolio of Mohit Meena | CSE, AI & Data Science Portfolio</title>
+
+  <link rel="stylesheet" href="style.css" />
 </head>
 
 <body>
+  <a class="skip-link" href="#main">Skip to main content</a>
 
-<div class="container">
+  <!-- Header -->
+  <header class="site-header">
+    <div class="header-inner">
+      <a class="logo" href="#home">Mohit Meena</a>
 
-    <h1>Book Reading List</h1>
+      <button
+        id="nav-toggle"
+        class="nav-toggle"
+        type="button"
+        aria-controls="primary-nav"
+        aria-expanded="false"
+        aria-label="Open menu"
+        onclick="togglePrimaryNav()"
+      >
+        <span class="nav-toggle-bar" aria-hidden="true"></span>
+        <span class="nav-toggle-bar" aria-hidden="true"></span>
+        <span class="nav-toggle-bar" aria-hidden="true"></span>
+      </button>
 
-    <input id="bookTitle" placeholder="Book title">
+      <nav id="primary-nav" class="primary-nav" aria-label="Primary">
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About Me</a></li>
+          <li><a href="#education">Education</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+          <li><a href="#chatbot">AI Chatbot</a></li>
+        </ul>
+      </nav>
 
-    <input id="author" placeholder="Author">
+      <button
+        id="theme-toggle"
+        class="theme-toggle"
+        type="button"
+        aria-pressed="false"
+        aria-label="Switch to dark mode"
+      >
+        <span class="theme-toggle-icon" aria-hidden="true">🌙</span>
+        <span class="theme-toggle-text">Dark</span>
+      </button>
+    </div>
+  </header>
 
-    <button onclick="addBook()">Add Book</button>
+  <main id="main">
 
-    <h2>My Books</h2>
+    <!-- Home -->
+    <section id="home" class="hero" aria-labelledby="home-heading">
+      <div class="container hero-grid">
+        <div>
+          <p class="eyebrow">
+            Computer Science Engineering · AI &amp; Data Science
+          </p>
 
-    <ul id="bookList"></ul>
+          <h1 id="home-heading">Hi, I'm Mohit Meena 👋</h1>
 
-</div>
+          <p class="lead">
+            I am a Computer Science Engineering student at JECRC University,
+            Jaipur, with an interest in Artificial Intelligence and Data Science.
+            I enjoy learning programming, developing web applications,
+            solving problems, and exploring new technologies.
+          </p>
 
-<script src="script.js"></script>
+          <div class="hero-actions">
+            <a class="button button-primary" href="#projects">
+              Explore My Projects
+            </a>
 
+            <a class="button button-secondary" href="#contact">
+              Get In Touch
+            </a>
+          </div>
+        </div>
+
+        <aside class="hero-card" aria-label="Quick profile">
+          <p><strong>Name:</strong> Mohit Meena</p>
+          <p>
+            <strong>Degree:</strong>
+            B.E. / B.Tech in Computer Science Engineering
+          </p>
+          <p><strong>Specialization:</strong> AI &amp; Data Science</p>
+          <p><strong>University:</strong> JECRC University</p>
+          <p><strong>Location:</strong> Jaipur, Rajasthan, India</p>
+          <p>
+            <strong>GitHub:</strong>
+            <a
+              href="https://github.com/mohitmina64-hub/internal_assesment2"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+                mohitmeena152006
+            </a>
+          </p>
+        </aside>
+      </div>
+    </section>
+
+    <!-- About Me -->
+    <section id="about" class="section" aria-labelledby="about-heading">
+      <div class="container">
+        <h2 id="about-heading">About Me</h2>
+
+        <p>
+          Hello! I'm Mohit Meena, a Computer Science Engineering student at
+          JECRC University in Jaipur, Rajasthan. I am interested in Artificial
+          Intelligence, Data Science, Python programming, and web development.
+        </p>
+
+        <p>
+          I have been working on beginner-friendly projects to improve my
+          programming, debugging, and problem-solving skills. My projects
+          include Python programs, an interactive quiz application, a book
+          reading list, and experiments with AI-assisted debugging.
+        </p>
+
+        <p>
+          I believe in learning by building projects, understanding how code
+          works, and continuously improving my technical knowledge. My goal
+          is to strengthen my foundations in computer science and explore
+          practical applications of AI and data science.
+        </p>
+
+        <p>
+          <strong>My interests:</strong>
+          Python, Web Development, Artificial Intelligence, Data Science,
+          Problem Solving, and Machine Learning Fundamentals.
+        </p>
+      </div>
+    </section>
+
+    <!-- Education -->
+    <section
+      id="education"
+      class="section section-alt"
+      aria-labelledby="education-heading"
+    >
+      <div class="container">
+        <h2 id="education-heading">Education</h2>
+
+        <ul class="timeline">
+          <li>
+            <h3>JECRC University</h3>
+
+            <p>
+              B.E. / B.Tech in Computer Science Engineering
+              (Artificial Intelligence and Data Science)
+            </p>
+
+            <p>Started in 2025 · Currently pursuing</p>
+            <p>Jaipur, Rajasthan, India</p>
+          </li>
+
+          <li>
+            <h3>Dr. A.P.J. Abdul Kalam Technical University</h3>
+
+            <p>Higher Secondary Education · RBSE Board</p>
+
+            <p>2023 – 2024</p>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Skills -->
+    <section id="skills" class="section" aria-labelledby="skills-heading">
+      <div class="container">
+        <h2 id="skills-heading">My Skills</h2>
+
+        <p>
+          I am developing my technical skills through coursework,
+          independent practice, and hands-on projects.
+        </p>
+
+        <ul class="skill-list">
+          <li>Python Programming Fundamentals</li>
+          <li>HTML5</li>
+          <li>CSS3</li>
+          <li>JavaScript Fundamentals</li>
+          <li>Problem Solving</li>
+          <li>Debugging and Code Improvement</li>
+          <li>Basic Data Structures</li>
+          <li>Git and GitHub</li>
+          <li>AI-Assisted Coding with Cursor AI</li>
+          <li>Artificial Intelligence Fundamentals</li>
+          <li>Data Science Fundamentals</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Projects -->
+    <section
+      id="projects"
+      class="section section-alt"
+      aria-labelledby="projects-heading"
+    >
+      <div class="container">
+        <h2 id="projects-heading">My Projects</h2>
+
+        <p>
+          Here are some of my programming and web development projects.
+          Explore the repositories to see my work and learning progress.
+        </p>
+
+        <div class="search-bar">
+          <label for="project-search">Search Projects</label>
+
+          <input
+            id="project-search"
+            type="search"
+            name="project-search"
+            placeholder="Search Python, quiz, debugging..."
+            autocomplete="off"
+          />
+        </div>
+
+        <p
+          id="search-status"
+          class="search-status"
+          role="status"
+          aria-live="polite"
+        ></p>
+
+        <div id="project-grid" class="project-grid">
+
+          <!-- Project 1 -->
+          <article
+            class="project-card"
+            data-title="Python Programs Collection"
+            data-description="Python practice programs covering factorial, Fibonacci sequence, dictionaries, and data structures."
+            data-tech="python factorial fibonacci dictionary data structures programming"
+          >
+            <h3>Python Programs Collection</h3>
+
+            <p>
+              A collection of beginner Python programs designed to strengthen
+              programming fundamentals. The exercises include factorial
+              calculations, Fibonacci sequences, dictionary operations,
+              and basic data structure practice.
+            </p>
+
+            <p class="tech">
+              <span>Python</span>
+              <span>Fundamentals</span>
+              <span>Data Structures</span>
+            </p>
+
+            <p class="project-links">
+              <a href="https://github.com/mohitmina64-hub/internal_assesment2/tree/56fbbce450f3d085c38c15bb6f707eb8ac729cf5/Python_Program">View Project File</a>
+            </p>
+          </article>
+
+          <!-- Project 2 -->
+          <article
+            class="project-card"
+            data-title="Messy Python Code Improvement"
+            data-description="Python refactoring practice focused on naming, readability, code structure, and maintainability."
+            data-tech="python refactoring code quality readability"
+          >
+            <h3>Messy Python Code Improvement</h3>
+
+            <p>
+              A practice project focused on improving messy Python code
+              through better naming, cleaner structure, improved readability,
+              and more maintainable programming practices.
+            </p>
+
+            <p class="tech">
+              <span>Python</span>
+              <span>Refactoring</span>
+              <span>Code Quality</span>
+            </p>
+
+            <p class="project-links">
+              <a
+                href="https://github.com/mohitmina64-hub/internal_assesment2/tree/56fbbce450f3d085c38c15bb6f707eb8ac729cf5/Messy_Python"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                View on GitHub
+              </a>
+            </p>
+          </article>
+
+          <!-- Project 3 -->
+          <article
+            class="project-card"
+            data-title="Bug Fixing Using Cursor AI"
+            data-description="A learning project about identifying bugs, debugging code, and using Cursor AI to understand possible fixes."
+            data-tech="debugging cursor ai python javascript bug fixing"
+          >
+            <h3>Bug Fixing Using Cursor AI</h3>
+
+            <p>
+              A learning project exploring how Cursor AI can assist with
+              identifying bugs, understanding error messages, suggesting
+              fixes, and improving code. The focus is on learning why
+              a change works rather than blindly accepting generated code.
+            </p>
+
+            <p class="tech">
+              <span>Debugging</span>
+              <span>Cursor AI</span>
+              <span>Problem Solving</span>
+            </p>
+
+            <p class="project-links">
+              <a
+                href="https://github.com/mohitmina64-hub/internal_assesment2/tree/56fbbce450f3d085c38c15bb6f707eb8ac729cf5/Bug_Fixing"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                View on GitHub
+              </a>
+            </p>
+          </article>
+
+          <!-- Project 4 -->
+          <article
+            class="project-card"
+            data-title="Interactive Quiz Application"
+            data-description="A browser-based quiz application with questions, answer selection, score tracking, and instant feedback."
+            data-tech="html css javascript quiz frontend web development"
+          >
+            <h3>Interactive Quiz Application</h3>
+
+            <p>
+              A browser-based quiz application that demonstrates frontend
+              development concepts through interactive questions, answer
+              selection, score tracking, and instant feedback.
+            </p>
+
+            <p class="tech">
+              <span>HTML</span>
+              <span>CSS</span>
+              <span>JavaScript</span>
+            </p>
+
+            <p class="project-links">
+              <a
+                href="https://github.com/mohitmina64-hub/internal_assesment2/tree/56fbbce450f3d085c38c15bb6f707eb8ac729cf5/Quize_application"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                View on GitHub
+              </a>
+            </p>
+          </article>
+
+          <!-- Project 5 -->
+          <article
+            class="project-card"
+            data-title="Book Reading List Application"
+            data-description="A simple reading list application for organizing books, tracking reading progress, and managing a personal reading list."
+            data-tech="html css javascript books reading list frontend"
+          >
+            <h3>Book Reading List Application</h3>
+
+            <p>
+              A simple web application for organizing a personal reading
+              list, keeping track of books, and practicing interactive
+              frontend development with HTML, CSS, and JavaScript.
+            </p>
+
+            <p class="tech">
+              <span>HTML</span>
+              <span>CSS</span>
+              <span>JavaScript</span>
+            </p>
+
+            <p class="project-links">
+              <a
+                href="https://github.com/mohitmina64-hub/internal_assesment2/tree/56fbbce450f3d085c38c15bb6f707eb8ac729cf5/Book_Reading_list"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                View on GitHub
+              </a>
+            </p>
+          </article>
+
+        </div>
+
+        <p id="no-results" class="empty-state" hidden>
+          No projects found. Try searching for Python, JavaScript,
+          quiz, or debugging.
+        </p>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="section" aria-labelledby="contact-heading">
+      <div class="container">
+        <h2 id="contact-heading">Contact Me</h2>
+
+        <p>
+          I'm interested in learning, collaborating on projects,
+          and connecting with other students and developers.
+          You can find me on GitHub.
+        </p>
+
+        <address class="contact-card">
+          <p>
+            <strong>Location:</strong>
+            Jaipur, Rajasthan, India
+          </p>
+
+          <p>
+            <strong>GitHub:</strong>
+            <a
+              href="https://github.com/jai152006"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              github.com/jai152006
+            </a>
+          </p>
+        </address>
+
+        <p>
+          Email, phone number, and LinkedIn profile can be added
+          when you are ready to share those details.
+        </p>
+      </div>
+    </section>
+
+    <!-- Chatbot -->
+    <section
+      id="chatbot"
+      class="section section-alt"
+      aria-labelledby="chatbot-heading"
+    >
+      <div class="container">
+        <h2 id="chatbot-heading">AI Chatbot</h2>
+
+        <p class="chatbot-note">
+          This is a local demo chatbot for my portfolio. It uses preset
+          responses and is not connected to a live AI service. A backend
+          API can be integrated later. API keys should never be exposed
+          in frontend JavaScript.
+        </p>
+
+        <div class="chatbot" aria-label="Portfolio chatbot">
+          <div
+            id="chat-log"
+            class="chat-log"
+            role="log"
+            aria-live="polite"
+            aria-relevant="additions"
+          >
+            <p class="chat-bubble bot">
+              Hi! I'm Mohit's portfolio chatbot. Ask me about his education,
+              skills, projects, or interests.
+            </p>
+          </div>
+
+          <form id="chat-form" class="chat-form">
+            <label for="chat-input">Your Message</label>
+
+            <div class="chat-row">
+              <input
+                id="chat-input"
+                type="text"
+                name="message"
+                autocomplete="off"
+                placeholder="Ask about my projects or skills..."
+                required
+              />
+
+              <button class="button button-primary" type="submit">
+                Send
+              </button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <p>
+        &copy; <span id="year"></span> Jai Jangid.
+        Built with HTML, CSS, and JavaScript.
+      </p>
+
+      <p>
+        Computer Science Engineering · AI &amp; Data Science
+      </p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
 </body>
 </html>
